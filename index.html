@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Dashboard</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    ùintegrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -57,12 +62,235 @@
             </div>
           </nav>
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-
+    <div class="container py-4 px-0">
+        <div class="row d-flex justify-content-space-between">
+            <div class="col-9 flex-direction-column">
+                <div class="title d-flex justify-content-between">
+                    <h3>Catalogo Libri</h3>
+                    <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
+                <div class="table mt-4">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                              <th scope="col">Titolo</th>
+                              <th scope="col">Data prestito</th>
+                              <th scope="col">Stato</th>
+                              <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col">I pilastri della vita</th>
+                                <td>-</td>
+                                <td>
+                                    <span class="badge text-white bg-success">Disponibile</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">I promessi sposi</th>
+                                <td>-</td>
+                                <td>
+                                    <span class="badge text-white bg-success">Disponibile</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Il Signore degli anelli</th>
+                                <td>18/10/2023</td>
+                                <td>
+                                    <span class="badge text-white bg-warning">In prestito</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Harry Potter</th>
+                                <td>-</td>
+                                <td>
+                                    <span class="badge text-white bg-success">Disponibile</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Il Codice da Vinci</th>
+                                <td>-</td>
+                                <td>
+                                    <span class="badge text-white bg-danger">Non disponibile</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Shining</th>
+                                <td>-</td>
+                                <td>
+                                    <span class="badge text-white bg-success">Disponibile</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">La Divina commedia</th>
+                                <td>21/09/2023</td>
+                                <td>
+                                    <span class="badge text-white bg-warning">In prestito</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Il Trono di spade</th>
+                                <td>-</td>
+                                <td>
+                                    <span class="badge text-white bg-success">Disponibile</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Il mondo di Sofia</th>
+                                <td>-</td>
+                                <td>
+                                    <span class="badge text-white bg-danger">Non disponibile</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Le Cronache di Narnia</th>
+                                <td>25/07/2023</td>
+                                <td>
+                                    <span class="badge text-white bg-warning">In prestito</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Il Piccolo Principe</th>
+                                <td>-</td>
+                                <td>
+                                    <span class="badge text-white bg-success">Disponibile</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="col">La Storia infinita</th>
+                                <td>-</td>
+                                <td>
+                                    <span class="badge text-white bg-success">Disponibile</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa-solid fa-trash"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="col-4">ciao</div>
+
+            <div class="col-3">ciaooo
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
