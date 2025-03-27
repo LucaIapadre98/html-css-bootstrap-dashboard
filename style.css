@@ -3,3 +3,10 @@ header{
     background-color: #111111;
     justify-content: space-between;
 }
+
+/* debug */
+.debug, .debug *{
+    background-color: hsl(0, 90%, 68%);
+  
+    border: 1px dashed red;
+}
